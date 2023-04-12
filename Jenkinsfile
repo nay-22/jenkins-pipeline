@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Checking python version') {
+        stage('Display Context') {
             steps {
-                bat 'py -V'
+                echo 'Experiment 4 - Jenkins Pipeline'
             }
         }
         stage('REPO cloning') {
