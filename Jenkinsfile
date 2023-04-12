@@ -8,7 +8,7 @@ pipeline {
         }
         stage('REPO cloning') {
             steps {
-                bat 'XCOPY \S "*" "C:/xampp/htdocs/jenkins-pipline" /Y'
+                bat 'xcopy /S "*" "C:/xampp/htdocs/jenkins-pipline" /Y'
             }
         }
         stage('Confirm') {
