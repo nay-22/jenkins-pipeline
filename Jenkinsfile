@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Checking python version') {
             steps {
-                bat 'python -V'
+                bat 'py -V'
             }
         }
         stage('REPO cloning') {
             steps {
-                bat 'xcopy /S "*" "C:/xampp/htdocs/jenkins-pipline" /Y'
+                bat 'xcopy /S "*" "C:/xampp/htdocs/jenkins_pipline" /Y'
             }
         }
         stage('Confirm') {
